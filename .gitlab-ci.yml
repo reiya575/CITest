@@ -1,10 +1,24 @@
 stages:
   - build
+  - archive
 
 build_project:
   stage: build
   script:
     - xcodebuild clean -project CITest.xcodeproj -scheme CITest | xcpretty
     - xcodebuild test -project CITest.xcodeproj -scheme CITest -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.1' | xcpretty -s
+  tags:
+    - test
+
+archive_project:
+  stage: archive
+  script:
+    - xcodebuild clean archive -archivePath build/CITest -scheme CITest
+    - xcodebuild -exportArchive -exportFormat ipa -archivePath "build/CITest.xcarchive" -exportPath "build/CITest.ipa"
+  only:
+    - master
+  artifacts:
+    paths:
+    - build/CITest.ipa
   tags:
     - test

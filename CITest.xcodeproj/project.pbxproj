@@ -193,6 +193,7 @@
 				TargetAttributes = {
 					D41C176C1ECEEDD6009C030D = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = YC9BWFAXPE;
 						ProvisioningStyle = Automatic;
 					};
 					D41C17801ECEEDD6009C030D = {
@@ -412,6 +413,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = YC9BWFAXPE;
 				INFOPLIST_FILE = CITest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.naoyaruike.CITest;
@@ -424,6 +427,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = YC9BWFAXPE;
 				INFOPLIST_FILE = CITest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.naoyaruike.CITest;
@@ -505,6 +510,7 @@
 				D41C17971ECEEDD6009C030D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D41C17981ECEEDD6009C030D /* Build configuration list for PBXNativeTarget "CITestTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +519,7 @@
 				D41C179A1ECEEDD6009C030D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D41C179B1ECEEDD6009C030D /* Build configuration list for PBXNativeTarget "CITestUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +528,7 @@
 				D41C179D1ECEEDD6009C030D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
